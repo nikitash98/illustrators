@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {
@@ -35,4 +36,61 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+#canvas-container {
+  height: 100%;
+  filter: blur(10px);
+}
+
+#canvas-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  pointer-events: none;
+}
+
+.title_pieces {
+  font-family:  Helvetica, sans-serif;
+  font-size: 320pt;
+  position: absolute;
+  line-height:normal;
+}
+
+#sketch {
+  filter: blur(5.1px);
+  top: -5%;
+  left: 20%;
+  z-index: -5;
+}
+
+#night {
+  filter: blur(3.1px);
+  top: 22%;
+  left: 20%;
+
+}
+#at_the {
+  filter: blur(1px);
+  font-size: 60pt ;
+  top: 58%;
+  left: 21%;
+}
+
+#society {
+  top: 53%;
+  left: 20%;
+
+}
+
+
+.event_item {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  filter: blur(5px);
+  width: 300px;
 }
