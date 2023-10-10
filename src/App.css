@@ -41,7 +41,7 @@
 
 #canvas-container {
   height: 100%;
-  filter: blur(10px);
+  filter: blur(10px) saturate(1.1);
 }
 
 #canvas-overlay {
@@ -64,7 +64,7 @@
   filter: blur(5.1px);
   top: -5%;
   left: 20%;
-  z-index: -5;
+  z-index: 5;
 }
 
 #night {
@@ -89,8 +89,62 @@
 
 .event_item {
   position: absolute;
-  top: 40%;
-  left: 80%;
   filter: blur(5px);
-  width: 300px;
+  transform: translate(-50%, 0%);
+  width: 400px;
+  color: black
+
+}
+
+.event_item h1 {
+  font-size: 15pt;
+  margin: 0px;
+  text-align: left;
+  font-family: 'Helvetica Neue', sans-serif;
+
+}
+.event_item h2 {
+  text-align: left;
+  margin: 0px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+
+}
+.event_item:hover {
+  cursor: pointer;
+  filter: blur(1px);
+}
+
+.ui.dimmer {
+  background-color: transparent !important;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.271) !important;
+}
+
+
+#inner_shadow{
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  box-shadow: inset 0 0 200px white;
+  z-index: 10;
+}
+
+.slider_container {
+  pointer-events: auto;
+}
+
+.tick_modal >* {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.tick_modal h1 {
+  font-weight: 100;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 50pt;
+  line-height: 40pt;
+  text-transform: uppercase;
+  margin: 0px;
 }
